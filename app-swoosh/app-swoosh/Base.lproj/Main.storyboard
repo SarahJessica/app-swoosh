@@ -60,6 +60,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="q6R-nS-2Ng" kind="show" id="aOR-Ci-pEr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -168,6 +171,13 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zv-7S-pa9">
+                                <rect key="frame" x="15" y="15" width="29" height="24"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="bdH-pD-j3z" kind="unwind" unwindAction="unwindFromDesiredLeagueVCWithUnwindSegue:" id="crJ-Io-uHd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -179,8 +189,10 @@
                             <constraint firstItem="d9M-hy-9Ri" firstAttribute="top" secondItem="pGB-xW-ZQq" secondAttribute="top" constant="70" id="gFi-mB-SPx"/>
                             <constraint firstItem="pGB-xW-ZQq" firstAttribute="trailing" secondItem="d9M-hy-9Ri" secondAttribute="trailing" constant="50" id="ggb-MU-Nly"/>
                             <constraint firstItem="pGB-xW-ZQq" firstAttribute="trailing" secondItem="KEW-cv-BUJ" secondAttribute="trailing" constant="15" id="htd-Nu-Rb5"/>
+                            <constraint firstItem="5zv-7S-pa9" firstAttribute="leading" secondItem="pGB-xW-ZQq" secondAttribute="leading" constant="15" id="ied-9x-aGk"/>
                             <constraint firstItem="4aG-Ph-G6W" firstAttribute="leading" secondItem="5HU-zP-3E2" secondAttribute="leading" id="l6D-zH-n6b"/>
                             <constraint firstItem="KEW-cv-BUJ" firstAttribute="leading" secondItem="pGB-xW-ZQq" secondAttribute="leading" constant="15" id="msy-Tn-dhL"/>
+                            <constraint firstItem="5zv-7S-pa9" firstAttribute="top" secondItem="5HU-zP-3E2" secondAttribute="top" constant="15" id="qtT-Um-JAp"/>
                             <constraint firstItem="4aG-Ph-G6W" firstAttribute="trailing" secondItem="pGB-xW-ZQq" secondAttribute="trailing" id="rFB-m5-peu"/>
                             <constraint firstItem="4aG-Ph-G6W" firstAttribute="top" secondItem="5HU-zP-3E2" secondAttribute="top" id="tPa-Y6-iEW"/>
                             <constraint firstItem="d9M-hy-9Ri" firstAttribute="leading" secondItem="pGB-xW-ZQq" secondAttribute="leading" constant="50" id="vjK-hc-ttk"/>
@@ -189,6 +201,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JgQ-iV-jc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bdH-pD-j3z" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="824.79999999999995" y="158.77061469265368"/>
         </scene>
@@ -284,6 +297,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="imageView:fnj-yv-jr5:image" width="119" height="20">
